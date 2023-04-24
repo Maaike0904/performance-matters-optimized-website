@@ -17,6 +17,15 @@ app.use(express.static("public"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+// Maak een route voor de index
+app.get('/', (request, response) => {
+  let categoriesUrl = url + '/categories'
+
+  fetchJson(categoriesUrl).then((data) => {
+    response.render('index', data)
+  })
+})
+
 // Stel het poortnummer in en start express
 app.set("port", process.env.PORT || 8000);
 app.listen(app.get("port"), function () {
