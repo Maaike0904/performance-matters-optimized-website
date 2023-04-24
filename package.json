@@ -2,7 +2,7 @@
   "name": "performance-matters-optimized-website",
   "version": "1.0.0",
   "description": "Vini mini Marwa en Maaike",
-  "main": "app.js",
+  "main": "index.js",
   "type": "module",
   "directories": {
     "doc": "docs"
