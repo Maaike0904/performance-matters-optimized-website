@@ -33,8 +33,7 @@
 .vinimini-logo {
   margin: 1em;
   margin-left: -7em;
-  width: 80%;
-  height: 50%;
+  width: 8em;
 }
 
 /* -----MENU----- */
@@ -68,6 +67,8 @@ a:hover {
 
 nav ul {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 nav ul li a {
