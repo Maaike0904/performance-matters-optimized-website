@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: montserrat, sans-serif, Helvetica;
+}
+
+/* -----CUSTOM PROPERTIES----- */
+
+:root {
+  --yellow: #f4eb34;
+  --Aqua-green: #73aea6;
+  --Black: #000000;
+  --Grey: #fafafa;
+  --Lightblue: #daeeee;
+}
+
+/* -----BANNER----- */
+
+.banner {
+  background-color: var(--yellow);
+  padding: 1em;
+}
+
+.verzending_banner {
+  text-align: center;
+}
+
+/* -----LOGO----- */
+
+.vinimini-logo {
+  margin: 1em;
+  width: 25%;
+  height: 50%;
+}
+
+/* -----MENU----- */
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-left: 2px;
+  padding-right: 2px;
+  list-style: none;
+}
+
+ul {
+  text-decoration: none;
+  color: black;
+  left: 0;
+  font-size: 1rem;
+  transition: 0.2s;
+}
+
+.icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-left: 4rem;
+  margin-top: 1rem;
+  padding-right: 2px;
+  margin-left: 1rem;
+  list-style: none;
+}
+
+h1 {
+  color: var(--Aqua-green);
+  font-size: 3em;
+  text-align: center;
+  margin-bottom: 2em;
+  margin-top: -2.5em;
+}
+
+@media screen and (max-width: 500px) {
+  .banner {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  ul {
+    display: none;
+  }
+}
+
+/* -----FOOTER STYLING----- */
+
+
+.ul_footer {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  font-size: 13px;
+  margin: 0.5em;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.footer_ul {
+  display: flex;
+  margin: 2em;
+  justify-content: center;
+}
+
+.first-color {
+  color: var(--Aqua-green);
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.certified {
+  margin-top: 2.6rem;
+  width: 80px;
+  height: 110px;
+}
+
+.copyright {
+  margin-top: -2em;
+  margin-left: 85em;
+  font-size: 10px;
+}
+
+@media screen and (min-width: 800px) {
+  .footer_ul {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .copyright {
+    display: none;
+  }
+}
