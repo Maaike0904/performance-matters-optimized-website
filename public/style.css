@@ -32,20 +32,13 @@
 
 .vinimini-logo {
   margin: 1em;
-  width: 25%;
+  margin-left: -7em;
+  width: 80%;
   height: 50%;
 }
 
 /* -----MENU----- */
 
-/* nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  padding-left: 2px;
-  padding-right: 2px;
-  list-style: none;
-} */
 header {
   width: 100%;
   height: 80%;
@@ -64,24 +57,21 @@ nav {
   width: 100%;
 }
 
-/* nav ul {
-  float: right;
-  margin-right: 20px;
-} */
-
-nav ul li {
-  display: inline-block;
-  line-height: 80px;
-  margin: 0 5px;
-}
-
-nav ul li a {
-  color: var(--Black);
-}
-
 a:hover {
   color: var(--Aqua-green);
   transition: 0.5s;
+}
+
+.hamburger {
+  display: none;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li a {
+  display: block;
 }
 
 @media only screen and (max-width: 900px) {
@@ -90,11 +80,15 @@ a:hover {
     cursor: pointer;
   }
 }
+
 .hamburger .line {
   width: 30px;
   height: 3px;
   background: var(--Black);
   margin: 6px 0;
+}
+
+.hamburger {
 }
 
 nav {
