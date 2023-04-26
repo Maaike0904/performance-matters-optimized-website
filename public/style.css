@@ -14,11 +14,14 @@
   --Lightblue: #daeeee;
 }
 
+
+
 /* -----BANNER----- */
 
 .banner {
   background-color: var(--yellow);
   padding: 1em;
+  width: 100%;
 }
 
 .verzending_banner {
@@ -57,7 +60,7 @@ ul {
   flex-direction: row;
   justify-content: space-evenly;
   padding-left: 4rem;
-  margin-top: 1rem;
+  margin-top: 8rem;
   padding-right: 2px;
   margin-left: 1rem;
   list-style: none;
@@ -71,7 +74,7 @@ h1 {
   margin-top: -2.5em;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 300px) {
   .banner {
     display: none;
   }
@@ -84,7 +87,6 @@ h1 {
 }
 
 /* -----FOOTER STYLING----- */
-
 
 .ul_footer {
   display: flex;
@@ -126,8 +128,8 @@ h1 {
   }
 }
 
-@media screen and (min-width: 800px) {
+/* @media screen and (min-width: 800px) {
   .copyright {
     display: none;
   }
-}
+} */
