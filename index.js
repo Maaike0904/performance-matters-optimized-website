@@ -102,6 +102,10 @@ app.get("/test", (request, response) => {
   response.render("test");
 });
 
+app.get("/inloggen", (request, response) => {
+  response.render("inloggen");
+});
+
 export async function postJson(url, body) {
   return await fetch(url, {
     method: "post",
