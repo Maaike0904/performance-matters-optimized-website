@@ -1,0 +1,355 @@
+<%- include('./partials/head.ejs') %>
+
+<!-- Titel "Pinda" wil ik ook nog aan de API verbinden-->
+  <h1>Planning van Sam - Pinda <img src="/pinda.png" class="pinda-icoon"></h1>
+<!-- Titel  end -->
+
+    <h2><ion-icon class="arrow-left" name="caret-back-outline"></ion-icon> Maart <ion-icon class="arrow-right" name="caret-forward-outline"></ion-icon>
+
+<!-- Filteren binnen H2, zodat hij ernaast komt -->
+  <div class="dropdown">
+  <button class="dropbtn">Kies het allergeen<span><ion-icon class="arrow-1" name="chevron-down-outline"></ion-icon></span></button>
+  <div class="dropdown-content">
+
+  <% categories.forEach(category => { %>
+      <p><a href="/<%= category.titel %>"><%= category.titel %></a></p>
+<% }) %>
+
+  </div>
+  </div>
+<!-- Filteren einde -->
+    </h2>
+
+<div>
+
+<div>
+<!-- Checklist container -->
+<div class="container">
+  <div class="checklist">
+
+<fieldset>
+
+  <h3 class="checklist-h2">Checklist Maart</h3>
+
+<!-- CHECKBOXEN -->
+  <div>
+    <label for="check-1">
+    <input type="checkbox" id="check-1" name="check" value="check" label='check-1'/>
+    Stap-1 pindahapje</label>
+  </div>
+
+  <div>
+    <label for="check-2">
+    <input type="checkbox" id="check-2" name="check-2" value="check-2" label='check-2'/>
+    Stap-2 pindahapje</label>
+  </div>
+
+  <div>
+    <label for="check-3">
+    <input type="checkbox" id="check-3" name="check-3" value="check-3" label='check-3'/>
+    Stap-3 pindahapje</label>
+  </div>
+
+  <div>
+    <label for="check-4">
+    <input type="checkbox" id="check-4" name="check-4" value="check-4" label='check-4' />
+    Stap-4 pindahapje</label>
+  </div>
+
+  <div>
+    <label for="check-5">
+    <input type="checkbox" id="check-5" name="check-5" value="check-5"  label='check-5'/>
+    Stap-5 pindahapje</label>
+  </div> 
+
+  <div>
+    <label for="check-6">
+    <input type="checkbox" id="check-6" name="check-6" value="check-6" label='check-6'/>
+    Stap-6 pindahapje</label>
+  </div> 
+
+  <div>
+    <label for="check-7">
+    <input type="checkbox" id="check-7" name="check-7" value="check-7" label='check-7'/>
+    Stap-7 pindahapje</label>
+  </div> 
+  <div>
+    <label for="check-8">
+    <input type="checkbox" id="check-8" name="check-8" value="check-8" label='check-8'/>
+    Stap-8 pindahapje</label>
+  </div>
+</fieldset>
+
+  </div> 
+</div>
+<!-- Checklist container end -->
+<div class="slider-section-notities">
+<ul class="back-next">
+    <li><span class="back"><ion-icon class="arrow-left" name="caret-back-outline"></ion-icon></span></li>
+    <li><span class="next"><ion-icon class="arrow-right" name="caret-forward-outline"></ion-icon></span></li>
+</ul>
+
+<!-- Notities die zijn geschreven -->
+<% notities.forEach(notitie => { %>
+     
+    <article class="notitie-container notitie-slider">
+    
+        <h3>Notities</h3> <span class="datum"><%= notitie.datum %></span>
+        <h3><%= notitie.titel %></h3>
+        <p><%= notitie.beschrijving %></p>
+   
+        <button class="toevoegen-notitie">+ Notitie Toevoegen</button>
+    </article>
+<% }); %>
+
+</div>
+
+<!-- Dagboek formulier deel -->
+<!-- Geen gebruik gemaakt van fieldset omdat het maar een kleine invullijst is -->
+<div class="container">
+    <section class="fieldset-dagboek">
+      <h3 class="checklist-h2">Dagboek</h3>
+
+<form action="/" method="post">
+    
+        <!-- TITEL -->
+        <label for="dagboek">Voor welke mini wilt u een notitie maken?<span>(verplicht)</span></label>
+        <br><input name="titel" id="dagboek" type="text" placeholder="Naam" required>
+
+        <!-- BESCHRIJVING -->
+        <br><label for="beschrijving">Notitie<span>(verplicht)</span></label>
+        <br><textarea id="beschrijving" name="beschrijving" placeholder="Vul hier jouw notitie in" required></textarea>
+    
+        <br><label for="herinnering">Herinnering</label>
+        <br><input name="herinnering" id="herinnering" type="datetime-local">
+
+        <br><label for="datum">Datum</label>
+        <br><input name="datum" id="datum" type="datetime-local">
+
+    <br><button type="submit">Versturen</button>
+
+</form>
+</div>
+    </section>
+
+<!-- Dagboek formulier deel end -->
+</div>
+
+<!-- calendar deel -->
+<table id="calendar">
+  <tbody>
+
+<!-- weekdays -->
+      <tr class="weekdays">
+        <th scope="col">Maandag</th>
+        <th scope="col">Dinsdag</th>
+        <th scope="col">Woensdag</th>
+        <th scope="col">Donderdag</th>
+        <th scope="col">Vrijdag</th>
+        <th scope="col">Zaterdag</th>
+        <th scope="col">Zondag</th>
+      </tr>
+
+<!-- day other-month -->
+        <td class="day other-month">
+          <div class="date">28</div>
+          <div class="event">
+            <div class="event-desc">Stap-1 pindahapje
+            </div>
+            <div class="event-time">8:00</div>
+          </div>
+        </td>
+
+        <td class="day other-month">
+          <div class="date">29</div>
+        </td>
+
+        <td class="day other-month">
+          <div class="date">30</div>
+        </td>
+<!-- day rij 1 -->
+        <td class="day">
+          <div class="date">1</div>
+        </td>
+
+        <td class="day">
+          <div class="date">2</div>
+          <div class="event">
+          <div class="event-desc">Stap-2 pindahapje</div>
+
+          <div class="event-time">14:00</div>
+          </div>
+          <div class="event">
+          <div class="event-desc">Stap-3 pindahapje</div>
+
+          <div class="event-time">15.00</div>
+          </div>
+        </td>
+
+        <td class="day">
+          <div class="date">3</div>
+        </td>
+
+        <td class="day">
+          <div class="date">4</div>
+        </td>
+      </tr>
+
+<!-- day rij 2 -->
+      <tr>
+        <td class="day">
+          <div class="date">5</div>
+        </td>
+        <td class="day">
+          <div class="date">6</div>
+        </td>
+        <td class="day">
+          <div class="date">7</div>
+          <div class="event">
+            <div class="event-desc">Stap-4 pindahapje</div>
+            <div class="event-time">7:30 tot 8:00</div>
+          </div>
+        </td>
+        <td class="day">
+          <div class="date">8</div>
+        </td>
+        <td class="day">
+          <div class="date">9</div>
+        </td>
+        <td class="day">
+          <div class="date">10</div>
+        </td>
+        <td class="day">
+          <div class="date">11</div>
+        </td>
+      </tr>
+
+<!-- day rij 3 -->
+      <tr>
+        <td class="day">
+          <div class="date">12</div>
+        </td>
+
+        <td class="day">
+          <div class="date">13</div>
+        </td>
+
+        <td class="day">
+          <div class="date">14</div>
+          <div class="event">
+          <div class="event-desc">Stap-5 pindahapje</div>
+          <div class="event-time">10:00</div>
+          </div>
+        </td>
+
+        <td class="day">
+          <div class="date">15</div>
+        </td> 
+
+        <td class="day">
+          <div class="date">16</div>
+        </td>
+
+        <td class="day">
+          <div class="date">17</div>
+        </td>
+
+        <td class="day">
+          <div class="date">18</div>
+        </td>
+      </tr> 
+
+<!-- day rij 4 -->
+    <tr>
+        <td class="day">
+          <div class="date">19</div>
+        </td>
+
+        <td class="day">
+          <div class="date">20</div>
+        </td>
+
+        <td class="day">
+          <div class="date">21</div>
+        </td>
+
+        <td class="day">
+          <div class="date">22</div>
+        </td>
+
+        <td class="day">
+          <div class="date">23</div>
+        </td>
+
+        <td class="day">
+          <div class="date">24</div>
+        </td>
+
+        <td class="day">
+          <div class="date">25</div>
+          <div class="event">
+          <div class="event-desc">Stap-6 pindahapje</div>
+          <div class="event-time">18:00</div>
+          </div>
+        </td>
+      </tr>
+
+<!-- day rij 5 -->
+      <tr>
+        <td class="day">
+          <div class="date">26</div>
+        </td>
+
+        <td class="day">
+          <div class="date">27</div>
+        </td>
+
+        <td class="day">
+          <div class="date">28</div>
+        </td>
+
+        <td class="day">
+          <div class="date">29</div>
+        </td>
+
+        <td class="day">
+          <div class="date">30</div>
+        </td>
+
+        <td class="day">
+          <div class="date">31</div>
+          <div class="event">
+          <div class="event-desc">Stap-7 pindahapje</div>
+          <div class="event-time">21:00</div>
+        </td>
+
+        <td class="day other-month">        
+          <div class="date">1</div>
+          <div class="event">
+          <div class="event-desc">Stap-8 pindahapje</div>
+          <div class="event-time">8:00</div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+
+</table>
+
+</div>
+
+<!-- calendar deel end -->
+
+<!-- ICON INSTALLATION -->
+<script
+type="module"
+src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+></script>
+<script
+nomodule
+src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+></script>
+<!-- EIND ICON INSTALLATION -->
+
+
+</main>
+<%- include('./partials/foot.ejs') %>
