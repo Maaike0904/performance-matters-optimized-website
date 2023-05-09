@@ -14,6 +14,7 @@
   --Black: #000000;
   --Grey: #fafafa;
   --Lightblue: #daeeee;
+  --Darkblue: #152a42;
 }
 
 /* -----BANNER----- */
@@ -244,7 +245,156 @@ p {
     font-style: var(--Black);
     z-index: 1;
   }
-.dropbtn{
+  .dropbtn {
     display: none;
+  }
 }
+
+/* INLOGPAGINA */
+.inlog {
+  position: relative;
+  height: 100vh;
+  display: grid;
+  align-items: center;
+}
+
+.inlog-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 45%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.formulier {
+  position: relative;
+  background-color: white;
+  border: none;
+  margin-top: -5em;
+  margin-inline: 1.5rem;
+  padding: 2.5rem 1.5rem;
+  border-radius: 1rem;
+}
+
+.inlog-titel {
+  text-align: center;
+  font-size: 1.6rem;
+  color: var(--Aqua-green);
+  margin-bottom: 2rem;
+}
+
+.content {
+  row-gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.content,
+.inlog-box {
+  display: grid;
+}
+
+.inlog-box {
+  grid-template-columns: max-content 1fr;
+  align-items: center;
+  column-gap: 1.5rem;
+  border-bottom: 1px solid lightgrey;
+}
+
+.inlog-box__input {
+  position: relative;
+  border: none;
+}
+
+.inlog-box__input {
+  position: relative;
+  border: none;
+}
+
+.inlog-icoon,
+.login-eye {
+  font-size: 1.25rem;
+}
+
+.inlog-input {
+  width: 100%;
+  padding-block: 0.8rem;
+  background: none;
+  border: transparent;
+  color: var(--Darkblue);
+  position: relative;
+  z-index: 1;
+}
+
+.inlog-label {
+  position: absolute;
+  left: 0;
+  top: 13px;
+  transition: top 0.3s;
+  font-size: 0.9em;
+}
+
+.inlog-box:nth-child(2) input {
+  padding-right: 1.8rem;
+}
+
+.inlog-check {
+  margin-bottom: 1.5rem;
+}
+
+.inlog-check,
+.inlog-check__group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.inlog-forgot {
+  color: var(--Aqua-green);
+}
+
+.inlog-check__label,
+.inlog-forgot,
+.inlog-register {
+  font-size: 0.8rem;
+}
+
+.inlog-button {
+  width: 100%;
+  padding: 1rem;
+  background-color: none;
+  border: 2px solid var(--Aqua-green);
+  border-radius: 1.5rem;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  color: var(--Aqua-green);
+  font-weight: 700;
+  text-align: center;
+}
+
+.inlog-button:hover {
+  background-color: var(--Aqua-green);
+  color: white;
+  border: 2px solid var(--Aqua-green);
+  
+}
+
+@media screen and (min-width: 576px) {
+  .formulier {
+    width: 432px;
+    padding: 4rem 3rem 3.5rem;
+    border-radius: 1.5rem;
+  }
+
+  .formulier {
+    position: relative;
+    background-color: white;
+    border: none;
+    margin-top: -5em;
+    margin-inline: 1.5rem;
+    padding: 2.5rem 1.5rem;
+    border-radius: 1rem;
+    margin-left: 35%;
+  }
 }

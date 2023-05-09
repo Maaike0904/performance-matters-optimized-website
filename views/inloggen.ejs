@@ -1,1 +1,53 @@
-<%- include('./partials/head.ejs') %> <%- include('./partials/foot.ejs') %>
+<%- include('./partials/head.ejs') %>
+
+<div class="inlog">
+  <img
+    src="/inloggen_background.png"
+    alt="inlogscherm"
+    class="inlog-background"
+  />
+
+  <form action="" class="formulier">
+    <h2 class="inlog-titel">Inloggen</h2>
+
+    <div class="content">
+      <div class="inlog-box">
+        <i class="ri-user-line inlog-icoon"></i>
+
+        <div class="inlog-box__input">
+          <input type="email" required="" class="inlog-input" placeholder=" " />
+          <label for="" class="inlog-label">Emailadres</label>
+        </div>
+      </div>
+
+      <div class="inlog-box">
+        <i class="ri-lock-2-line inlog-icon"></i>
+        <div class="inlog-box__input">
+          <input
+            type="password"
+            required=""
+            class="inlog-input"
+            id="inlog-pass"
+            placeholder=" "
+          />
+          <label for="" class="login-label">Wachtwoord</label>
+          <i class="ri-eye-off-line login-eye" id="login-eye"></i>
+        </div>
+      </div>
+
+      <div class="inlog-check">
+        <div class="inlog-check__group">
+          <input type="checkbox" class="inlog-check__input" />
+          <label for="" class="inlog-check__label">Onthoud mij</label>
+        </div>
+        <a href="" class="inlog-forgot">Wachtwoord vergeten?</a>
+      </div>
+
+      <a href="/" class="inlog-button">Login</a>
+
+      <p class="login-register">Nog geen account? <a href="#">Registreer</a></p>
+    </div>
+  </form>
+</div>
+
+<%- include('./partials/foot.ejs') %>
