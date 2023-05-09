@@ -282,6 +282,7 @@ p {
   font-size: 1.6rem;
   color: var(--Aqua-green);
   margin-bottom: 2rem;
+  font-weight: 500;
 }
 
 .content {
@@ -377,7 +378,6 @@ p {
   background-color: var(--Aqua-green);
   color: white;
   border: 2px solid var(--Aqua-green);
-  
 }
 
 @media screen and (min-width: 576px) {

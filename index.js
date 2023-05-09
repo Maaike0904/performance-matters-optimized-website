@@ -106,6 +106,10 @@ app.get("/inloggen", (request, response) => {
   response.render("inloggen");
 });
 
+app.get("/alleproducten", (request, response) => {
+  response.render("alleproducten");
+});
+
 export async function postJson(url, body) {
   return await fetch(url, {
     method: "post",
