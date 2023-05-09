@@ -110,6 +110,14 @@ app.get("/alleproducten", (request, response) => {
   response.render("alleproducten");
 });
 
+app.get("/speciaalvoormini", (request, response) => {
+  response.render("speciaalvoormini");
+});
+
+app.get("/ingelogd", (request, response) => {
+  response.render("ingelogd");
+});
+
 export async function postJson(url, body) {
   return await fetch(url, {
     method: "post",
