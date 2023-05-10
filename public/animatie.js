@@ -1,8 +1,16 @@
 console.log("Hallo");
 
 var questions = [
-  { question: "What's your first name?" },
-  { question: "What's your last name?" },
+  { question: "Hoe heet jouw mini?" },
+  { question: "Wat is de geboortedatum van jouw mini?" },
+  { question: "Is het je eerste mini?" },
+  { question: "Hoe oud is jouw mini?" },
+  {
+    question:
+      "Heeft jouw Mini eerder een acute allergische reactie gehad na het eten?",
+  },
+  { question: "Heeft jouw Mini eczeem?" },
+  { question: "Zijn er voedselallergieën in de rest van het gezin?" },
   { question: "What's your email?", pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/ },
   { question: "Create your password", type: "password" },
 ];
