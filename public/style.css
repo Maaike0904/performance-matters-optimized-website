@@ -2,7 +2,7 @@
   box-sizing: border-box;
   /* border: solid black 1px; */
   margin: 0;
-  font-family: montserrat, sans-serif, Helvetica;
+  font-family: "Montserrat";
   list-style: none;
   text-decoration: none;
 }
@@ -294,11 +294,12 @@ p {
 }
 
 .inlog-titel {
+  font-family: "Montserrat";
   text-align: center;
   font-size: 1.6rem;
   color: var(--Aqua-green);
   margin-bottom: 2rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .content {
