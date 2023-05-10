@@ -22,15 +22,6 @@ app.get("/", (request, response) => {
   response.render("index");
 });
 
-// app.get("/proces", (request, response) => {
-//   let id = request.query.productId || "clerg7e1y032z0auq7ex5rid9";
-//   let detailUrl = url2 + "/product?id=" + id;
-
-//   fetchJson(detailUrl).then((data) => {
-//     response.render("proces", data);
-//   });
-// });
-
 app.get("/alleproducten", (request, response) => {
   let productenUrl = url;
   fetchJson(productenUrl).then((data) => {
@@ -38,14 +29,12 @@ app.get("/alleproducten", (request, response) => {
   });
 });
 
-app.get("/detail", (request, response) => {
-  let id = request.query.detailId || "clerps05z09jm0aw3vccjq5un";
-  let detailUrl2 = url2 + "/product?id=" + id;
-  console.log(detailUrl2);
-  fetchJson(detailUrl2).then((data) => {
-    // console.log(data)
-    response.render("detail", data);
-  });
+app.get("/inloggen", (request, response) => {
+  response.render("inloggen");
+});
+
+app.get("/ingelogd", (request, response) => {
+  response.render("ingelogd");
 });
 
 // Post note (notitie) to API
