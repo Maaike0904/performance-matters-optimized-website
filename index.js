@@ -45,6 +45,10 @@ app.get("/speciaalvoormini", (request, response) => {
   response.render("speciaalvoormini");
 });
 
+app.get("/test", (request, response) => {
+  response.render("test");
+});
+
 // Dit is de data uit de notitie api // Met dit stuk code willen we de data roepen uit de notitie api
 app.post("/kalender", function (req, res, next) {
   const baseurl = "https://api.vinimini.fdnd.nl/api/v1/";
