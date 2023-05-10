@@ -37,6 +37,10 @@ app.get("/ingelogd", (request, response) => {
   response.render("ingelogd");
 });
 
+app.get("/kalender", (request, response) => {
+  response.render("kalender");
+});
+
 // Post note (notitie) to API
 app.post("/kalender", function (req, res, next) {
   req.body.afgerond = false;
