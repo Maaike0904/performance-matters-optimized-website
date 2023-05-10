@@ -651,6 +651,25 @@ h1 {
 }
 
 /* --------KALENDER STYLING----------- */
+.h2-kalender {
+  color: var(--Aqua-green);
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  margin-top: 0.9em;
+  margin-left: 0.7em;
+  font-weight: bold;
+  width: 100%;
+  padding-top: 0.1em;
+}
+
+.p-kalender {
+  font-size: 0.7em;
+  margin-left: 0;
+  margin-bottom: 0;
+}
+
 .pinda-icoon,
 .ei-icoon {
   width: 30px;
@@ -661,12 +680,13 @@ h1 {
 .dropbtn2 {
   background-color: var(--LightGreen);
   color: var(--Darkblue);
-  /* padding: 0px; */
   font-size: 16px;
-  /* border-radius: 20px; */
   cursor: pointer;
   font-family: "Montserrat", sans-serif;
+  padding: 0.5em;
   width: 195px;
+  border-style: none;
+  border-radius: 0.5em;
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -682,7 +702,7 @@ h1 {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: 160px;
+  min-width: 195px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
   z-index: 1;
   font-family: "Montserrat", sans-serif;
@@ -691,7 +711,7 @@ h1 {
 
 /* Links inside the dropdown */
 .dropdown-content2 a {
-  color: var(--Black);
+  color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
