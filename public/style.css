@@ -190,7 +190,12 @@ h2 {
   color: var(--Aqua-green);
   font-size: 2.5em;
   text-align: center;
+}
 
+h3 {
+  color: var(--Black);
+  font-size: 1.5em;
+  text-align: center;
 }
 
 p {
@@ -665,6 +670,7 @@ h1 {
 }
 
 /* --------KALENDER STYLING----------- */
+
 .h2-kalender {
   color: var(--Aqua-green);
   text-align: center;
@@ -1334,4 +1340,45 @@ body.js-enabled .toevoegen-notitie:hover {
     flex: 0 0 auto;
     align-self: flex-end;
   }
+}
+
+/* --------SPECIAAL VOOR MINI STYLING----------- */
+
+.speciaal-producten {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  border: 2px solid var(--Aqua-green);
+  padding: 1rem;
+  margin: 2rem;
+  border-radius: 1em;
+  /* z-index: 100; */
+  position: relative;
+  width: 30rem;
+}
+
+.gele-kader {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 1rem;
+  border: 10px solid var(--yellow);
+  background-color: var(--yellow);
+  padding-left: 20rem;
+  padding-top: 1.5em;
+  border-radius: 1em;
+  position: relative;
+}
+
+.stappen {
+  color: var(--Aqua-green);
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.article-img {
+  width: 20rem;
+  height: auto;
 }
