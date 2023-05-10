@@ -11,8 +11,8 @@ var questions = [
   },
   { question: "Heeft jouw Mini eczeem?" },
   { question: "Zijn er voedselallergieën in de rest van het gezin?" },
-  { question: "What's your email?", pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/ },
-  { question: "Create your password", type: "password" },
+  // { question: "What's your email?", pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/ },
+  // { question: "Create your password", type: "password" },
 ];
 
 var tTime = 100; // transition transform time from #register in ms

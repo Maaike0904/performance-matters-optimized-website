@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  /* border: solid black 1px; */
   margin: 0;
   font-family: montserrat;
   list-style: none;
@@ -185,6 +184,13 @@ h2 {
   margin-top: 0.9em;
   margin-left: 0.7em;
   font-weight: bold;
+}
+
+.welkom-mini {
+  color: var(--Aqua-green);
+  font-size: 2.5em;
+  text-align: center;
+
 }
 
 p {
@@ -618,6 +624,7 @@ h1 {
 #inputContainer input {
   width: 100%;
   padding: 0 5px;
+  padding-top: 1em;
   border: none;
   font-size: 20px;
   font-weight: bold;
