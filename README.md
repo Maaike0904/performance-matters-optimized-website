@@ -32,6 +32,7 @@
 <!-- Bij Instalatie staat hoe een andere developer aan jouw repo kan werken -->
 
 ## Bronnen
+- https://www.smashingmagazine.com/2021/01/front-end-performance-2021-free-pdf-checklist/
 
 ## Licentie
 
