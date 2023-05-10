@@ -41,26 +41,33 @@ app.get("/kalender", (request, response) => {
   response.render("kalender");
 });
 
-// Post note (notitie) to API
+app.get("/speciaalvoormini", (request, response) => {
+  response.render("speciaalvoormini");
+});
+
+// Dit is de data uit de notitie api // Met dit stuk code willen we de data roepen uit de notitie api
 app.post("/kalender", function (req, res, next) {
+  const baseurl = "https://api.vinimini.fdnd.nl/api/v1/";
+  const url = `${baseurl}`;
   req.body.afgerond = false;
-  //req.body.persoonId = 'clemozv3c3eod0bunahh71sx7'
+  req.body.persoonId = "clemozv3c3eod0bunahh71sx7";
   req.body.datum = req.body.datum + ":00Z";
   req.body.herinnering = [req.body.herinnering + ":00Z"];
-  // console.log(req.body)
-  postJson(url2 + "/notities", req.body).then((data) => {
-    // console.log(JSON.stringify(data))
+  console.log(req.body);
 
+  //Nieuwe notite kunnen maken
+  postJson(url + "/notities", req.body).then((data) => {
+    console.log(JSON.stringify(data));
     let newNotitie = { ...req.body };
+
     if (data.success) {
       res.redirect("/kalender");
-      // TODO: squad meegeven, message meegeven
-      // TODO: Toast meegeven aan de homepagina
+      // /(shlash) Verwijst naar de homepage
     } else {
       const errormessage = `${data.message}: Mogelijk komt dit door de slug die al bestaat.`;
-      const newdata = { error: errormessage, values: newNotitie };
+      const newdata = { error: errormessage, values: newData };
 
-      res.render("kalender", newdata);
+      res.render("index", newdata);
     }
   });
 });

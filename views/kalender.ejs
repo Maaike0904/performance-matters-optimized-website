@@ -1,4 +1,4 @@
-<%- include('./partials/head.ejs') %>
+<%- include('./partials/head-ingelogd.ejs') %>
 
 <!-- Titel "Pinda" wil ik ook nog aan de API verbinden-->
   <h1>Planning van Sam - Pinda <img src="/pinda.png" class="pinda-icoon"></h1>
@@ -11,9 +11,7 @@
   <button class="dropbtn">Kies het allergeen<span><ion-icon class="arrow-1" name="chevron-down-outline"></ion-icon></span></button>
   <div class="dropdown-content">
 
-  <% categories.forEach(category => { %>
-      <p><a href="/<%= category.titel %>"><%= category.titel %></a></p>
-<% }) %>
+
 
   </div>
   </div>
@@ -90,17 +88,7 @@
 </ul>
 
 <!-- Notities die zijn geschreven -->
-<% notities.forEach(notitie => { %>
-     
-    <article class="notitie-container notitie-slider">
-    
-        <h3>Notities</h3> <span class="datum"><%= notitie.datum %></span>
-        <h3><%= notitie.titel %></h3>
-        <p><%= notitie.beschrijving %></p>
-   
-        <button class="toevoegen-notitie">+ Notitie Toevoegen</button>
-    </article>
-<% }); %>
+
 
 </div>
 
