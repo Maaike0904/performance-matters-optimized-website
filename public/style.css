@@ -189,7 +189,7 @@ h2 {
 
 p {
   margin-left: 1em;
-  margin-bottom: 4em;
+  margin-bottom: 2em;
   /* font-weight: bold */
 }
 
@@ -289,7 +289,7 @@ p {
   border: none;
   margin-top: -5em;
   margin-inline: 1.5rem;
-  padding: 2.5rem 1.5rem;
+  padding: 0.5rem 1.5rem;
   border-radius: 1rem;
 }
 
@@ -333,6 +333,10 @@ p {
   font-size: 1.25rem;
 }
 
+.login-eye {
+  margin-left: -3em;
+}
+
 .inlog-input {
   width: 100%;
   padding-block: 0.8rem;
@@ -345,7 +349,7 @@ p {
 
 .inlog-label {
   position: absolute;
-  left: 0;
+  left: 1em;
   top: 13px;
   transition: top 0.3s;
   font-size: 0.9em;
@@ -374,6 +378,7 @@ p {
 .inlog-forgot,
 .inlog-register {
   font-size: 0.8rem;
+  padding-left: 0.5em;
 }
 
 .inlog-button {
