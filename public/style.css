@@ -1427,7 +1427,13 @@ h3.stappen {
 
   h3 {
     font-size: 19px;
-    margin-top: -1.5em;
+    /* margin-top: -1.5em; */
+  }
+
+  article {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
   }
 }
 
