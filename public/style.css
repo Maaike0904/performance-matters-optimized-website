@@ -94,6 +94,7 @@ a {
 
 a:hover {
   color: var(--Aqua-green);
+  transition: 0.2s;
 }
 
 button > a {
