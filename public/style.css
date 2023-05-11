@@ -1341,12 +1341,6 @@ body.js-enabled .toevoegen-notitie:hover {
 }
 
 /* --------SPECIAAL VOOR MINI STYLING MOBILE VERSE FIRST----------- */
-/* .grid-speciale-producten {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-
-  column-gap: 50px;
-} */
 
 article {
   display: grid;
@@ -1362,9 +1356,6 @@ article {
   border-radius: 30px;
   position: relative;
   width: 19rem;
-}
-
-.grid-speciale-producten {
 }
 
 .gele-kader {
@@ -1406,4 +1397,11 @@ article {
   h3 {
     font-size: 19px;
   }
+}
+
+/* -----Ingelogd----- */
+.ingelogd-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
 }
