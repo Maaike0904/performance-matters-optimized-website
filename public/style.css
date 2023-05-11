@@ -1403,6 +1403,7 @@ article {
   color: var(--Aqua-green);
   text-align: center;
   font-size: 23px;
+  margin-top: 8px;
 }
 
 h3 {
@@ -1412,6 +1413,7 @@ h3 {
 .article-img {
   width: 15rem;
   height: auto;
+  margin-top: 1em;
 }
 
 @media (max-width: 1800px) {

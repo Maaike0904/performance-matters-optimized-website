@@ -7,17 +7,29 @@
     <% producten.forEach(product=> { %> <% if(product.categorie.titel ===
     "Pinda" ) { %>
 
-    <h2><%= product.titel %></h2>
 
     <% if(product.titel === "Mijn eerste pinda in 6 stappen") { %>
 
 <div class="speciaal-producten">
     <img class="article-img" src="/Pinda_6stappen.webp" alt="Pinda in 6 stappen"/>
     <% } %> <% if(product.titel === "Mijn eerste pinda in 6 stappen") { %>
+      <h3><%= product.titel %></h3>
 </div>
 
+
+<div class="speciaal-producten">
     <img class="article-img" src="/Pinda_doosjes.webp" alt="Pinda 4 maanden" />
     <% } %> <% if(product.titel==="Mijn eerste pinda in 6 stappen" ) { %>
+      
+      <h3><%= product.titel %></h3>
+
+  <div class="homepage-btn">
+    <button class="test-btn">
+     <h4>In winkelwagen</h4>
+      <button class="test-btn"><h4>bekijk product</h4></button>
+    </button>
+  </div>
+</div>
 
     <img class="article-img" src="/Zakjestap.webp" alt="Zakje stap" />
     <% } %> <% if(product.titel==="Mijn eerste pinda in 6 stappen" ) { %>
@@ -32,10 +44,11 @@
     <% } %> <% } %> <% }); %>
 
     <div class="speciaal-producten">
-  <div class="gele-kader"><h3 class="stappen">Stap 1</h3></div>
   <img  class="article-img" src="/Pinda_6stappen.webp" alt="Pinda in 6 stappen" />
+    </div>
 
   </article>
 </div>
+
 
 <%- include('./partials/foot.ejs') %>
