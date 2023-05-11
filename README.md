@@ -1,6 +1,9 @@
 > _Fork_ deze leertaak en ga aan de slag. Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
 
 # Vini Mini Persoonlijke omgeving🥜
+<img width="495" alt="Screenshot 2023-05-12 at 00 49 14" src="https://github.com/Maaike0904/performance-matters-optimized-website-vini-mini/assets/112861555/86f992a4-e1cc-4eca-bda5-e2fbb1d10bf0">
+
+<img width="495" alt="Screenshot 2023-05-12 at 00 48 49" src="https://github.com/Maaike0904/performance-matters-optimized-website-vini-mini/assets/112861555/e25a6457-a508-47c2-b9b3-53c3415b3cce">
 
 ## ✨Test + Kalender + Productpagina✨
 <!-- Geef je project een titel en schrijf in één zin wat het is -->
