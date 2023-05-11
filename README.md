@@ -18,22 +18,53 @@
 Deze sprint is de doel om een website te ontwikkelen die goed presteert en toegankelijk is voor de opdrachtgever Vini Mini. Vini Mini verkoopt producten die gericht zijn op het voorkomen van vroegtijdige allergieën bij baby's en kinderen. We hebben een productpagina, kalender en inlog pagina ontworpen voor opdrachtgever.
 
 
-## Gebruik
+## Gebruik♻️
 
 * #12 Als ouder wil ik in mijn agenda het stappenplan kunnen bekijken, zodat ik weet op welke dag ik een supplement voor een allergie moet geven.
 * #20 Als ouder wil ik van een product informatie en het stappenplan kunnen bekijken, zodat ik kan beslissen of ik een product wil kopen.
 * #3 Als ouder wil ik een vragenlijst kunnen invullen, om advies te krijgen over welke product en stappenplan mijn kind kan volgen.
 
-## Kenmerken
+## Kenmerken⚒️
 
-<!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? Misschien heb je iets met NodeJS gedaan, of heb je een framwork of library gebruikt? -->
+#### TOOLS
 
-## Installatie
+* Figma
+* Visuel studio code
+* Terminal
+* Npm
+* Nodejs
+* Josn
 
-<!-- Bij Instalatie staat hoe een andere developer aan jouw repo kan werken -->
+#### GEBRUIKTE TECHNIEKEN
+
+* Node
+* Javascript
+* Performance
+* Ejs
+* Html
+* Css
+
+[impossible-fawn-gear.cyclic.app/](https://impossible-fawn-gear.cyclic.app/)
+
+## Installatie🎬
+
+* Om in de repository te werken en aanpassingen te maken moet je node.js downloaden versie: .
+* Clone of download deze respository.
+* Open hem in je code-editor.
+* Open de terminal en type npm install.
+* Daarna door gerbruik van npm start krijg je een localhost link waar je de code live ziet.
+* Check even de .env-exmpel bestnadje voor de Api.
+* In de package-lock.json bestandje zie je alle modules die ik gebruik voor deze project.
+* Live zetten van je project kan met behulp van cyclic.
 
 ## Bronnen
-- [Smashing magazine](https://www.smashingmagazine.com/2021/01/front-end-performance-2021-free-pdf-checklist/)
+* [Smashing magazine](https://www.smashingmagazine.com/2021/01/front-end-performance-2021-free-pdf-checklist/)
+* https://www.google.com
+* https://www.cyclic.sh/
+* https://www.figma.com
+* https://api.vinimini.fdnd.nl
+* https://nl.pinterest.com/
+
 
 ## Licentie
 
