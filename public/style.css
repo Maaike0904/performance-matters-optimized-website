@@ -80,6 +80,20 @@ nav {
 ul {
   list-style-type: none;
   display: none;
+  color: var(--Aqua-green);
+}
+
+li:active {
+  color: var(--Aqua-green);
+}
+
+a {
+  list-style-type: none;
+  color: var(--Black);
+}
+
+a:hover {
+  color: var(--Aqua-green);
 }
 
 /* -----NAV MOBILE DROPDOWN----- */
@@ -1104,6 +1118,7 @@ tbody {
   li a {
     display: none;
     list-style-type: none;
+    color: var(--Aqua-green);
   }
 }
 
