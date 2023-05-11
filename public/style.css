@@ -78,12 +78,6 @@ ul {
   display: none;
 }
 
-ul:active {
-  list-style-type: none;
-  margin-top: -20px;
-  color: var(--pinda);
-}
-
 /* -----NAV MOBILE DROPDOWN----- */
 
 /* Style The Dropdown Button */
@@ -1343,20 +1337,30 @@ body.js-enabled .toevoegen-notitie:hover {
 }
 
 /* --------SPECIAAL VOOR MINI STYLING MOBILE VERSE FIRST----------- */
+/* .grid-speciale-producten {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  column-gap: 50px;
+} */
+
+article {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
 
 .speciaal-producten {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  grid-template-columns: repeat(1, 1fr);
   margin-bottom: 3rem;
   margin-top: 2.5em;
   border: 2px solid var(--Aqua-green);
   padding: 1rem;
-  /* margin-left: 1.5rem; */
   border-radius: 30px;
   position: relative;
   width: 19rem;
+}
+
+.grid-speciale-producten {
 }
 
 .gele-kader {
