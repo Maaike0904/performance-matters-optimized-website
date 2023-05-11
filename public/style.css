@@ -96,6 +96,14 @@ a:hover {
   color: var(--Aqua-green);
 }
 
+button > a {
+  color: var(--Aqua-green);
+}
+
+button > a:hover {
+  color: white;
+}
+
 /* -----NAV MOBILE DROPDOWN----- */
 
 /* Style The Dropdown Button */
