@@ -1449,3 +1449,10 @@ h3 {
 
 /* --------ALLE PRODUCTEN STYLING MOBILE VERSE FIRST----------- */
 
+@media (min-width: 1024px) {
+  .parting {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+}
