@@ -1438,8 +1438,12 @@ h3 {
 }
 
 /* -----Ingelogd----- */
+
 .ingelogd-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
 }
+
+/* --------ALLE PRODUCTEN STYLING MOBILE VERSE FIRST----------- */
+

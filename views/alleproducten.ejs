@@ -1,39 +1,40 @@
 <%- include('./partials/head.ejs') %>
 
-<h1>Alle producten</h1>
+<h2 class="welkom-mini">Alle producten</h2>
 
 <div class="content">
-  <article class="pindaproducten">
+  <article>
     <% producten.forEach(product=> { %> <% if(product.categorie.titel ===
     "Pinda" ) { %>
 
     <h2><%= product.titel %></h2>
 
     <% if(product.titel === "Mijn eerste pinda in 6 stappen") { %>
-    <img
-      class="article-img"
-      src="/Pinda_6stappen.webp"
-      alt="Pinda in 6 stappen"
-    />
-    <% } %>
 
-    <!-- <% if(product.titel === "Mijn eerste pinda in 6 stappen") { %>
-             <img class="article-img" src="/Pinda_doosjes.webp" alt="Pinda 4 maanden">
-        <% } %> -->
+<div class="speciaal-producten">
+    <img class="article-img" src="/Pinda_6stappen.webp" alt="Pinda in 6 stappen"/>
+    <% } %> <% if(product.titel === "Mijn eerste pinda in 6 stappen") { %>
+</div>
 
-    <!-- <% if(product.titel==="Mijn eerste pinda in 6 stappen" ) { %>
-            <img class="article-img" src="/Zakjestap.webp" alt="Zakje stap">
-         <% } %>
+    <img class="article-img" src="/Pinda_doosjes.webp" alt="Pinda 4 maanden" />
+    <% } %> <% if(product.titel==="Mijn eerste pinda in 6 stappen" ) { %>
 
-        <% if(product.titel==="Mijn eerste pinda in 6 stappen" ) { %>
-            <img class="article-img" src="/Zakjestap2.webp" alt="Zakje stap2">
-         <% } %>
+    <img class="article-img" src="/Zakjestap.webp" alt="Zakje stap" />
+    <% } %> <% if(product.titel==="Mijn eerste pinda in 6 stappen" ) { %>
 
-        <% if(product.titel==="Mijn eerste pinda in 6 stappen" ) { %>
-            <img class="article-img" src="/Zakjestap3.webp" alt="Zakje stap3">
-         <% } %> -->
+    <img class="article-img" src="/Zakjestap2.webp" alt="Zakje stap2" />
+    <% } %> <% if(product.titel==="Mijn eerste pinda in 6 stappen" ) { %>
 
-    <% } %> <% }); %>
+    <img class="article-img" src="/Zakjestap3.webp" alt="Zakje stap3" />
+    <% } %> <% if(product.titel==="Mijn eerste pinda in 6 stappen" ) { %>
+
+    <img class="article-img" src="/Zakjestap3.webp" alt="Zakje stap3" />
+    <% } %> <% } %> <% }); %>
+
+    <div class="speciaal-producten">
+  <div class="gele-kader"><h3 class="stappen">Stap 1</h3></div>
+  <img  class="article-img" src="/Pinda_6stappen.webp" alt="Pinda in 6 stappen" />
+
   </article>
 </div>
 
