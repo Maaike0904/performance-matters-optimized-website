@@ -194,6 +194,8 @@ h3 {
   color: var(--Black);
   font-size: 1.5em;
   text-align: center;
+  padding: 1.5em;
+  margin-top: -em;
 }
 
 p {
