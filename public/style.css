@@ -18,6 +18,10 @@
   --LightGreen: #d5edee;
 }
 
+main > div {
+  display: flex;
+}
+
 /* -----BANNER----- */
 
 .banner {
@@ -838,7 +842,7 @@ textarea {
   margin-bottom: 0.4em;
 }
 
-/* Kalender */
+/* -------Kalender------- */
 .agenda {
   background: rgba(58, 126, 121, 0.4);
   padding: 2em;
