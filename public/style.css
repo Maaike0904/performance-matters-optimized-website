@@ -1342,7 +1342,7 @@ body.js-enabled .toevoegen-notitie:hover {
   }
 }
 
-/* --------SPECIAAL VOOR MINI STYLING----------- */
+/* --------SPECIAAL VOOR MINI STYLING MOBILE VERSE FIRST----------- */
 
 .speciaal-producten {
   display: flex;
@@ -1354,9 +1354,8 @@ body.js-enabled .toevoegen-notitie:hover {
   padding: 1rem;
   margin: 2rem;
   border-radius: 1em;
-  /* z-index: 100; */
   position: relative;
-  width: 30rem;
+  width: 20rem;
 }
 
 .gele-kader {
@@ -1366,19 +1365,36 @@ body.js-enabled .toevoegen-notitie:hover {
   margin-top: 1rem;
   border: 10px solid var(--yellow);
   background-color: var(--yellow);
-  padding-left: 20rem;
-  padding-top: 1.5em;
   border-radius: 1em;
+  width: 16em;
+  height: 4em;
   position: relative;
 }
 
 .stappen {
   color: var(--Aqua-green);
   text-align: center;
-  font-size: 1.5em;
+  font-size: 23px;
+  margin-top: 0.3em;
 }
 
 .article-img {
-  width: 20rem;
+  width: 15rem;
   height: auto;
+}
+
+@media (max-width: 1800px) {
+  .stappen {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 800px) {
+  .welkom-mini {
+    font-size: 35px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
 }
