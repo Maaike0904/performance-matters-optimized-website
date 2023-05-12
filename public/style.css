@@ -59,11 +59,16 @@ main > div {
 /* -----IMAGE----- */
 
 .headerfoto {
-  width: 100vw;
+  width: 50vw;
   margin-bottom: 0.9em;
   margin-top: 0.5em;
   opacity: 60%;
   z-index: -1;
+}
+
+.container-home {
+  max-width: 32em;
+  margin: auto;
 }
 
 /* -----MENU/NAV----- */
@@ -233,7 +238,11 @@ p {
   margin-bottom: 1em;
   /* font-weight: bold */
 }
-
+.head-grid-home {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
 /* -----FOOTER STYLING----- */
 
 .ul_footer {
